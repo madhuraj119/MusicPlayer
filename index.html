@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0">
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <audio src="" id="audio-source"></audio>
+
+    <section class="home-section">
+
+        <div class="carousel">
+            <img src="assets/images/cover 9.1.jpg" class="active" alt="">
+            <img src="assets/images/cover 2.1.jpg" alt="">
+            <img src="assets/images/cover 3.1.jpg" alt="">
+            <img src="assets/images/cover 4.1.jpg" alt="">
+            <img src="assets/images/cover 8.1.jpg" alt="">
+        </div>
+
+        <h1 class="heading">recently played</h1>
+        <div class="playlists-group">
+            <div class="playlists-card">
+                <img src="assets/images/inter.jpg" class="playlists-card-img">
+                <p class="playlists-card-name">Top international</p>
+            </div>
+
+            <div class="playlists-card">
+                <img src="assets/images/cover 10.1.jpg" class="playlists-card-img">
+                <p class="playlists-card-name">Bollywood </p>
+            </div>
+
+            <div class="playlists-card">
+                <img src="assets/images/cover13.1.jpg" class="playlists-card-img">
+                <p class="playlists-card-name">Punjabi Songs </p>
+            </div>
+
+            <div class="playlists-card">
+                <img src="assets/images/old songs.jpg" class="playlists-card-img">
+                <p class="playlists-card-name">Old Songs</p>
+            </div>
+
+            <div class="playlists-card">
+                <img src="assets/images/album r.jpg" class="playlists-card-img">
+                <p class="playlists-card-name">Album Songs</p>
+            </div>
+
+
+            <div class="playlists-card">
+                <img src="assets/images/lofi.jpg" class="playlists-card-img">
+                <p class="playlists-card-name">Lofi Songs</p>
+            </div>
+        </div>
+
+        <h1 class="heading">based on your listening</h1>
+        <div class="playlists-group">
+            <div class="playlists-card">
+                <img src="assets/images/cover 2.1.jpg" class="playlists-card-img">
+                <p class="playlists-card-name">Top international</p>
+            </div>
+
+            <div class="playlists-card">
+                <img src="assets/images/cover 5.1.jpg" class="playlists-card-img">
+                <p class="playlists-card-name">Bollywood </p>
+            </div>
+
+            <div class="playlists-card">
+                <img src="assets/images/cover 6.1.jpg" class="playlists-card-img">
+                <p class="playlists-card-name">Punjabi Songs </p>
+            </div>
+
+            <div class="playlists-card">
+                <img src="assets/images/cover 8.1.jpg" class="playlists-card-img">
+                <p class="playlists-card-name">Old Songs</p>
+            </div>
+
+            <div class="playlists-card">
+                <img src="assets/images/album b.jpg" class="playlists-card-img">
+                <p class="playlists-card-name">Album Songs</p>
+            </div>
+
+
+            <div class="playlists-card">
+                <img src="assets/images/lofi.jpg" class="playlists-card-img">
+                <p class="playlists-card-name">Lofi Songs</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="music-player-section active">
+
+
+
+        <img src="assets/images/back.png" class="back-btn icon hide" alt="">
+        <img src="assets/images/nav.png" class="nav-btn icon hide" alt="">
+
+        <h1 class="current-song-name">song 1</h1>
+        <p class="artist-name hide">artist 1</p>
+
+        <img src="assets/images/cover 1.png" class="cover hide" alt="">
+
+        <div class="seek-bar-container">
+            <input type="range" class="music-seek-bar" value="0">
+            <p class="current-time hide">00 : 00</p>
+            <p class="duration hide">00 : 00</p>
+
+
+        </div>
+
+
+        <div class="timer">
+            <br><br>
+            <label for="sleep-timer">Sleep Timer </label>
+            <select id="sleep-timer">
+                <option value="off">Off</option>
+                <option value="30">30 sec</option>
+                <option value="1">1 min</option>
+                <option value="5">5 min</option>
+                <option value="10">10 min</option>
+                <option value="30">30 min</option>
+
+            </select>
+        </div>
+
+        <div class="controls">
+            <span class="fas fa-redo"></span>
+            <div class="main">
+                <i class="fas fa-backward active"></i>
+                <i class="fas fa-play active"></i>
+                <i class="fas fa-pause"></i>
+                <i class="fas fa-forward active"></i>
+            </div>
+
+
+
+            <input type="range" class="volume-slider" max="1" value="1" step="0.1">
+            <span class="fas fa-volume-up"></span>
+
+
+        </div>
+
+    </section>
+
+    <section class="playlist ">
+
+        <img src="assets/images/back.png" class="back-btn icon hide" alt="">
+
+        <h1 class="title">playlist</h1>
+
+
+
+        <div class="queue active">
+            <div class="queue-cover">
+                <img src="assets/images/aashiqui.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Tum Hi Ho</p>
+
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/kheriyat.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Kheriyat </p>
+
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/meri chaaht tu.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Meri Chaahat Tu </p>
+
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/sun raha.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Sun Raha Hai Na Tu </p>
+
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/wareya.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name"> Waareya </p>
+
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/humnava.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Humnava Mere </p>
+
+        </div>
+
+        <div class="queue active">
+            <div class="queue-cover">
+                <img src="assets/images/chahu mai.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Chahu Mai Ya Na</p>
+
+        </div>
+
+        <div class="queue active">
+            <div class="queue-cover">
+                <img src="assets/images/cover 1.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Apocalypse</p>
+
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/cover 2.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">On & On</p>
+
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/cover 3.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Ringtone</p>
+
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/cover 4.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Kleine prince</p>
+
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/cover 5.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Like Me</p>
+
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/cover 6.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Happy</p>
+
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/cover 7.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Mortal</p>
+
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/cover 8.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Safe & Sound</p>
+
+        </div>
+
+
+
+
+    </section>
+
+
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
